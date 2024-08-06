@@ -41,7 +41,7 @@
                                                 class="bg-violet-500 dark:bg-violet-700 hover:bg-violet-600 dark:hover:bg-violet-800 text-white font-bold py-2 px-4 rounded mr-2">Edit</a>
                                             <button type="button"
                                                 class="bg-pink-400 dark:bg-pink-600 hover:bg-pink-500 dark:hover:bg-pink-700 text-white font-bold py-2 px-4 rounded"
-                                                onclick="confirmDelete('{{ $student->id }}')">Delete</button>
+                                                onclick="confirmDelete('{{ $beca->id }}')">Borrar</button>
 
                                         </div>
                                     </td>
