@@ -25,20 +25,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($becas as $beca)
-                            <tr>
-                                <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">
-                                    {{ $beca->id }}</td>
-                                <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">
-                                    {{ $beca->Intitution_id }}</td>
-                                <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">
-                                    {{ $beca->Type }}</td>
 
-                                <td class="border px-4 py-2 text-center">
-
-                                </td>
-                            </tr>
-                        @endforeach
                     </tbody>
                 </table>
 
