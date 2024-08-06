@@ -1,6 +1,7 @@
 <?php
 
 use App\Rest\Controllers\BecasController;
+use App\Rest\Controllers\InstitutionsController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -16,4 +17,5 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
     Route::resource('Becas', BecasController::class);
+    Route::resource('Institutions', InstitutionsController::class);
 });
