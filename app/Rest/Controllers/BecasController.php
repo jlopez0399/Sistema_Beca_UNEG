@@ -19,7 +19,7 @@ class BecasController extends RestController
     public function index()
     {
         $beca = Beca::all();
-        return view('becas.index', compact('beca'));
+        return view('becas.index', compact('becas'));
 
     }
 
@@ -50,7 +50,7 @@ class BecasController extends RestController
     public function edit(string $id)
     {
         $beca = Beca::findOrFail($id);
-        return view('becas.edit', compact('beca'));
+        return view('becas.edit', compact('becas'));
     }
 
     public function update(Request $request, string $id)
