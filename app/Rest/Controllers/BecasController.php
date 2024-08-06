@@ -70,7 +70,7 @@ class BecasController extends RestController
         return redirect()->route('becas.index');
     }
 
-    public function destroy(string $id)
+    public function destroy($id)
     {
         $beca = Beca::findOrFail($id);
 
