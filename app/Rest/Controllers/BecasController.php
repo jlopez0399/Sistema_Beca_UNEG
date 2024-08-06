@@ -19,7 +19,7 @@ class BecasController extends RestController
     public function index()
     {
         $beca = Beca::all();
-        return view('becas.index', compact('becas'));
+        return view('becas.index', compact('beca'));
 
     }
 
