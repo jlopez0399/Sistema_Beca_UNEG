@@ -32,10 +32,14 @@ class InstitutionsController extends RestController
     {
         // Validar los datos del formulario
         $request->validate([
-            'Name' => 'required|string|min:5|max:255'
+            'Name' => 'required|string|min:5|max:255',
+            'Phone' => 'required|string|min:5|max:255',
+            'Email' => 'required|string|min:5|max:255'
+
+
         ]);
 
-         // Crear una nueva institución usando el método `create` del modelo
+        // Crear una nueva institución usando el método `create` del modelo
         Institution::create($request->all());
 
         // Redireccionar a la vista de listado de instituciones
@@ -57,7 +61,10 @@ class InstitutionsController extends RestController
     {
         // Validar los datos del formulario
         $request->validate([
-            'Name' => 'required|string|min:5|max:255'
+            'Name' => 'required|string|min:5|max:255',
+            'Phone' => 'required|string|min:5|max:255',
+            'Email' => 'required|string|min:5|max:255'
+
         ]);
 
         // Buscar la institución por su ID
