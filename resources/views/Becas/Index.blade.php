@@ -30,7 +30,7 @@
                                 <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">
                                     {{ $beca->id }}</td>
                                 <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">
-                                    {{ $beca->Intitutio_id }}</td>
+                                    {{ $beca->Intitution_id }}</td>
                                 <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">
                                     {{ $beca->Type }}</td>
 
