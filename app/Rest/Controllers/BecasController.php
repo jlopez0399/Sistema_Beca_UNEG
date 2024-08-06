@@ -35,7 +35,7 @@ class BecasController extends RestController
             'Type' => 'required|string|min:5|max:255'
         ]);
 
-         // Crear un nuevo estudiante usando el método `create` del modelo
+         // Crear una nueva beca usando el método `create` del modelo
         Beca::create($request->all());
 
         // Redireccionar a la vista de listado de becas
