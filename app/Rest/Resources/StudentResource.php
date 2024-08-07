@@ -22,11 +22,11 @@ class StudentResource extends RestResource
     {
         return [
             'id',
-            'First name',
+            'First_name',
             'Suname',
-            'Identification card',
+            'Identification_card',
             'Phone',
-            'Room telephone',
+            'Room_telephone',
             'Email',
             'Semeter'
         ];
