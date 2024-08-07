@@ -40,7 +40,7 @@ class BecasController extends RestController
         Beca::create($request->all());
 
         // Redireccionar a la vista de listado de becas
-        return redirect()->route('becas.index');
+        return redirect()->route('Becas.index');
     }
 
     public function show(string $id)
