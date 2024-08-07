@@ -19,13 +19,13 @@ class BecasController extends RestController
     public function index()
     {
         $becas = Beca::all();
-        return view('becas.index', compact('becas'));
+        return view('Becas.index', compact('becas'));
 
     }
 
     public function create()
     {
-        return view('becas.create');
+        return view('Becas.create');
     }
 
     public function store(Request $request)
@@ -51,7 +51,7 @@ class BecasController extends RestController
     public function edit(string $id)
     {
         $beca = Beca::findOrFail($id);
-        return view('becas.edit', compact('becas'));
+        return view('Becas.edit', compact('becas'));
     }
 
     public function update(Request $request, string $id)
@@ -69,7 +69,7 @@ class BecasController extends RestController
         $beca->update($request->all());
 
         // Redireccionar a la vista de listado de becas
-        return redirect()->route('becas.index');
+        return redirect()->route('Becas.index');
     }
 
     public function destroy($id)
@@ -78,6 +78,6 @@ class BecasController extends RestController
 
         $beca->delete();
 
-        return redirect()->route('becas.index');
+        return redirect()->route('Becas.index');
     }
 }
