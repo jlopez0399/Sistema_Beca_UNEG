@@ -31,7 +31,7 @@
                                     <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">
                                         {{ $beca->id }}</td>
                                     <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">
-                                        {{ $beca->Institution_id }}</td>
+                                        {{$beca->Institution_id }}</td>
                                     <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">
                                         {{ $beca->Type }}</td>
 
@@ -68,7 +68,7 @@
                 form.innerHTML = '@csrf @method('DELETE')';
                 document.body.appendChild(form);
                 form.submit();
-                alertify.success('Registro eliminado');
+                alertify.success('Registro liminado');
             },
             function() {
                 alertify.error('No se pudo eliminar');

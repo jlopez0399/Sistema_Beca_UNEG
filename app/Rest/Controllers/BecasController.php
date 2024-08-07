@@ -3,6 +3,7 @@
 namespace App\Rest\Controllers;
 
 use App\Models\Beca;
+use App\Models\Institution;
 use Illuminate\Http\Request;
 use App\Rest\Controller as RestController;
 use App\Rest\Resources\BecaResource;
@@ -25,7 +26,9 @@ class BecasController extends RestController
 
     public function create()
     {
-        return view('becas.create');
+        $beca = new Beca();
+        $institutions = Institution::pluck('id','Name');
+        return view('becas.create', compact('beca', 'institutions'));
     }
 
     public function store(Request $request)
