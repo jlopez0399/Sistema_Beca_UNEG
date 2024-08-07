@@ -32,6 +32,7 @@ class BecasController extends RestController
     {
         // Validar los datos del formulario
         $request->validate([
+            'Institution_id' => 'required|integer|min:1',
             'Type' => 'required|string|min:5|max:255'
         ]);
 
@@ -57,6 +58,7 @@ class BecasController extends RestController
     {
         // Validar los datos del formulario
         $request->validate([
+            'Institution_id' => 'required|integer|min:1',
             'Type' => 'required|string|min:5|max:255'
         ]);
 
