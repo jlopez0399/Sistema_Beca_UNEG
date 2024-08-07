@@ -16,6 +16,6 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-    Route::resource('Becas', BecasController::class);
-    Route::resource('Institutions', InstitutionsController::class);
+    Route::resource('becas', BecasController::class);
+    Route::resource('institutions', InstitutionsController::class);
 });

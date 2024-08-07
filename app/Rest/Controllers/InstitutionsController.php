@@ -32,9 +32,9 @@ class InstitutionsController extends RestController
     {
         // Validar los datos del formulario
         $request->validate([
-            'Name' => 'required|string|min:5|max:255',
-            'Phone' => 'required|string|min:5|max:255',
-            'Email' => 'required|string|min:5|max:255'
+            'Name' => 'required|string|min:3|max:255',
+            'Phone' => 'required|string|min:3|max:255',
+            'Email' => 'required|string|min:3|max:255'
 
 
         ]);
@@ -61,9 +61,9 @@ class InstitutionsController extends RestController
     {
         // Validar los datos del formulario
         $request->validate([
-            'Name' => 'required|string|min:5|max:255',
-            'Phone' => 'required|string|min:5|max:255',
-            'Email' => 'required|string|min:5|max:255'
+            'Name' => 'required|string|min:3|max:255',
+            'Phone' => 'required|string|min:3|max:255',
+            'Email' => 'required|string|min:3|max:255'
 
         ]);
 

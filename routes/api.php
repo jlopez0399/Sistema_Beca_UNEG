@@ -18,12 +18,12 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-Rest::resource('Institutions', InstitutionsController::class);
-Rest::resource('Students', StudentsController::class);
-Rest::resource('Stu_careers', Stu_careersController::class);
-Rest::resource('Careers', CareersController::class);
-Rest::resource('Becas', BecasController::class);
-Rest::resource('Campuses', CampusesController::class);
-Rest::resource('Stu_becas', Stu_becasController::class);
-Rest::resource('Stu_campuses', Stu_campusesController::class);
-Rest::resource('Caree_campuses', Caree_campusesController::class);
+Rest::resource('institutions', InstitutionsController::class);
+Rest::resource('students', StudentsController::class);
+Rest::resource('stu_careers', Stu_careersController::class);
+Rest::resource('careers', CareersController::class);
+Rest::resource('becas', BecasController::class);
+Rest::resource('campuses', CampusesController::class);
+Rest::resource('stu_becas', Stu_becasController::class);
+Rest::resource('stu_campuses', Stu_campusesController::class);
+Rest::resource('caree_campuses', Caree_campusesController::class);
