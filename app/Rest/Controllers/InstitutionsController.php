@@ -14,7 +14,7 @@ class InstitutionsController extends RestController
      *
      * @var class-string<\Lomkit\Rest\Http\Resource>
      */
-    //public static $resource = InstitutionResource::class;
+    public static $resource = InstitutionResource::class;
 
     public function index()
     {

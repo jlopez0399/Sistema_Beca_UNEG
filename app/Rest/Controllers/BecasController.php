@@ -14,7 +14,7 @@ class BecasController extends RestController
      *
      * @var class-string<\Lomkit\Rest\Http\Resource>
      */
-    //public static $resource = BecaResource::class;
+    public static $resource = BecaResource::class;
 
     public function index()
     {
