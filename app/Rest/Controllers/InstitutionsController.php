@@ -19,7 +19,7 @@ class InstitutionsController extends RestController
     public function index()
     {
         $institutions = Institution::all();
-        return view('institutions.index', compact('intitutions'));
+        return view('institutions.index', compact('institutions'));
 
     }
 

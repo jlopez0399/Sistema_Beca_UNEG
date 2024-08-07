@@ -30,11 +30,14 @@
                             @foreach ($institutions as $institution)
                                 <tr>
                                     <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">
-                                        {{ $beca->id }}</td>
+                                        {{ $institution->id }}</td>
                                     <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">
-                                        {{ $beca->Institution_id }}</td>
+                                        {{ $institution->Name }}</td>
                                     <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">
-                                        {{ $beca->Type }}</td>
+                                        {{ $institution->Phone }}</td>
+
+                                    <td class="border px-4 py-2 text-gray-900 dark:text-white text-center">
+                                        {{ $institution->Email }}</td>
 
                                     <td class="border px-4 py-2 text-center">
                                         <div class="flex justify-center">
