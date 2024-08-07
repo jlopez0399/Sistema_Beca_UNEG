@@ -19,13 +19,13 @@ class InstitutionsController extends RestController
     public function index()
     {
         $institutions = Institution::all();
-        return view("Institutions.index", compact('institutions'));
+        return view("institutions.index", compact('institutions'));
 
     }
 
     public function create()
     {
-        return view('Institutions.create');
+        return view('institutions.create');
     }
 
     public function store(Request $request)
@@ -43,7 +43,7 @@ class InstitutionsController extends RestController
         Institution::create($request->all());
 
         // Redireccionar a la vista de listado de instituciones
-        return redirect()->route('Institutions.index');
+        return redirect()->route('institutions.index');
     }
 
     public function show(string $id)
@@ -54,7 +54,7 @@ class InstitutionsController extends RestController
     public function edit(string $id)
     {
         $institutions = Institution::findOrFail($id);
-        return view('Institutions.edit', compact('institutions'));
+        return view('institutions.edit', compact('institutions'));
     }
 
     public function update(Request $request, string $id)
@@ -74,7 +74,7 @@ class InstitutionsController extends RestController
         $institution->update($request->all());
 
         // Redireccionar a la vista de listado de instituciones
-        return redirect()->route('Institutions.index');
+        return redirect()->route('institutions.index');
     }
 
     public function destroy($id)
@@ -83,6 +83,6 @@ class InstitutionsController extends RestController
 
         $institution->delete();
 
-        return redirect()->route('Institutions.index');
+        return redirect()->route('institutions.index');
     }
 }
