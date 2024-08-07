@@ -50,7 +50,7 @@ class BecasController extends RestController
 
     public function edit(string $id)
     {
-        $beca = Beca::findOrFail($id);
+        $becas = Beca::findOrFail($id);
         return view('Becas.edit', compact('becas'));
     }
 

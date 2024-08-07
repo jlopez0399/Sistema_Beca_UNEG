@@ -53,7 +53,7 @@ class InstitutionsController extends RestController
 
     public function edit(string $id)
     {
-        $institution = Institution::findOrFail($id);
+        $institutions = Institution::findOrFail($id);
         return view('Institutions.edit', compact('institutions'));
     }
 
